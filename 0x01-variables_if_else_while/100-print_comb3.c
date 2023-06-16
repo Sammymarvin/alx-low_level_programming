@@ -3,26 +3,29 @@
 * main - Entry point
 *
 * Return: Always 0 (success)
-*  prints all possible different combinations of two digits
 */
 int main(void)
 {
-    int i, j;
+	int digit1, digit2;
 
-    for (i = 0; i <= 9; i++)
-    {
-        for (j = i + 1; j <= 9; j++)
-        {
-            putchar(i + '0');
-            putchar(j + '0');
+	for (digit1 = 0; digit1 <= 9; digit1++)
+	{
+		for (digit2 = digit1 + 1 ; digit2 <= 9; digit2++)
+		{
+			putchar(digit1 + '0');
+			putchar(digit2 + '0');
 
-            if (i < 8 || j < 9)
-            {
-            putchar(',');
-            putchar(' ');
-            }
-        }
-    }
-    putchar('\n');
-    return (0);
+			if (digit1 < 8 || digit2 < 9)
+			{
+			putchar(',');
+			putchar(' ');
+			}
+		} 
+
+	}
+
+	putchar('\n');
+
+	return (0);
 }
+
