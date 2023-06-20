@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * print_alphabet -
- * Entry point
+ * print_alphabet - Entry point
  * Return:0
+ * task one
  */
 
 void print_alphabet(void)
